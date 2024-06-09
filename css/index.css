@@ -1,0 +1,783 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+  
+   width: 100%;
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+ overflow-x: hidden;
+ height: auto;
+
+
+}
+/* start navbar */
+
+
+  .navbar{
+      display: flex;
+   justify-content: space-between;
+   width: 100%;
+
+   z-index: 1000;
+   position: fixed;
+top: 0;
+overflow: hidden;
+  }
+  .navbar .nav-item{
+      display: flex;
+  }
+  .navbar .nav-item ul{
+      display: flex;
+      align-items: center;
+margin-right: 50px;
+overflow: hidden;
+  }
+  .navbar .nav-item ul li{
+      list-style-type: none;
+      padding: 15px;
+  }
+
+  .navbar .nav-item ul li a{
+      text-decoration: none;
+      color:#777;
+      font-size: 15px;
+      line-height:46px;
+  }
+  .navbar .nav-item ul li a:hover{
+      border-bottom: 2px solid blueviolet;
+  }
+
+  .navbar .nav-item ul li .active{
+    color:#777;
+    font-size: 15px;
+    position: relative;
+  }
+  .navbar .nav-item ul li .active::after{
+      content: "";
+      border-bottom: 2px solid blueviolet;
+      width: 80%;
+    top: 100%;
+    left: 0;
+  position: absolute;
+  
+  }
+  .navbar .nav-item .logo img{
+      width: 180px;
+      height: 100%;
+  }
+  .navbar .btn{
+      display: flex;
+      align-items: center;
+
+  }
+  .navbar .btn a{
+      text-decoration: none;
+      border: 1px solid;
+      border: none;
+      border-radius:   50px ;
+      margin-right: 50px;
+      padding: 10px 50px;
+      color:#777;
+      background-color: white;
+  }
+  .navbar .btn a:hover{
+      background-color: blueviolet;
+      color: white;
+  }
+/* end navbar */
+/* start landing section */
+header{
+    width: 100%;
+    height:80vh;
+    background:url("../imgs/blue_bg.png") no-repeat ;
+     border-bottom-right-radius: 50% ;
+ border-bottom-left-radius: 50%;
+
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+background-size: cover;
+background-attachment: fixed;
+}
+header .container{
+  
+    width: 100%;
+
+height: 100%;
+
+
+    display: flex;
+    justify-content: space-around;
+align-items: center;
+max-width: 1200px;
+flex-wrap: wrap;
+
+}
+
+header  .text {
+overflow: hidden;
+ 
+width: calc(50% - 20px);
+}
+header  .text h2{
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #555;
+
+}
+header  .text h2 span{
+    color: blueviolet;
+    
+}
+header  .text p{
+    color: #777;
+    opacity: .7;
+    font-size: 20px;
+
+}
+ header .img{
+
+     margin-top: 55px;
+
+     width: calc(50% - 20px);
+
+     height: 100%;
+background: url("/imgs/landing_bg.png") no-repeat;
+background-size: 100% 100%;
+
+
+ }
+
+ header .img .man{
+     
+width: 100%;
+height: 90%;
+ position: relative;
+
+margin: auto;
+
+ }
+ 
+ header .img .man .mask{
+     width: 100%;
+     height: 100%;
+ }
+ header .img .man .clouds{
+     width: 100%;
+     height: auto;
+     overflow: hidden;
+   position: absolute;
+top: 70%;
+left: 13%;
+ }
+
+ header .img   .wave{
+     width: 100%;
+     height: 50%;
+
+    
+     position: relative;
+     bottom: 65px;
+     right:59%;
+     
+ }
+
+/* end landing section */
+
+
+
+
+
+/* start second */
+/* start second */
+.zigzag {
+padding: 200px 300px;
+    width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+}
+
+.second {
+    height: 100vh;
+    background: url("/imgs/second_section_.png") no-repeat;
+    width: 100%;
+    background-size: 100% 100%;
+    background-position: center;
+    
+
+    overflow: hidden;
+    position: relative;
+    padding: 50px 20px;
+}
+
+.second .item1,
+.second .item2,
+.second .item3 {
+    text-align: center;
+    height: 100%;
+    width: calc((100% - 60px)/ 3);
+
+}
+.second .item1{
+position: absolute;
+
+top: 140px;
+
+right:75%;
+
+
+}
+.second .item2{
+    position: absolute;
+    right:  40%;
+   bottom:-55%;
+    
+    
+    }
+    .second .item3{
+        position: absolute;
+        left:  65%;
+bottom: -77%;
+       
+        
+        }
+.second .item1 img,
+.second .item2 img,
+.second .item3 img {
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.second .item1 h4,
+.second .item2 h4,
+.second .item3 h4 {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.second .item1 p,
+.second .item2 p,
+.second .item3 p {
+    color: #777;
+    opacity: .5;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.other {
+    background: url("/imgs/why_kudzoka_bg.png") no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    position: relative;
+    right: 300px;
+    top: 0;
+
+    height: 300px;
+    padding: 50px 100px;
+    width: 400px;
+    overflow: hidden;
+}
+
+.other h4 {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.other p {
+    color: white;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+/* end second */
+
+/* start footer */
+.footer {
+    height: 80vh; /* Full height */
+    width: 100%; /* Full width */
+    overflow: hidden;
+    position: relative;
+
+    
+}
+.bg-img{
+    position: absolute;
+    width: 110%;
+    height: 150%;
+    left: -3%;
+    top: 0;
+}
+
+.people{
+    position: absolute;
+    width: 40vw;
+    right: 9%;
+    bottom: 0;
+}
+.foot {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+   position: absolute;
+   top: 30%;
+left:60px;
+}
+
+
+
+
+.foot .icons {
+    margin-top: 20px;
+}
+
+.foot .icons img {
+    padding: 5px;
+}
+
+
+
+.foot  ul {
+    display: flex;
+margin-top: 20px;
+    align-items: center;
+
+    list-style-type: none;
+}
+
+
+
+.foot .foot-nav ul li a {
+    font-family: serif;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding-right: 30px;
+}
+
+.market-btn {
+    display: inline-block;
+    padding: 0.3125rem 0.875rem;
+    padding-left: 2.8125rem;
+    -webkit-transition: border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+    transition: border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+    border-radius: 8px;
+    background-position: center left 0.75rem;
+    background-color: #fff;
+    background-size: 1.5rem 1.5rem;
+    background-repeat: no-repeat;
+    text-decoration: none;
+}
+
+.market-btn .market-button-title {
+    display: block;
+    color: #222;
+    font-size: 1.125rem;
+}
+
+.market-btn .market-button-subtitle {
+    display: block;
+    margin-bottom: -0.25rem;
+    color: #888;
+    font-size: 0.75rem;
+}
+
+.market-btn:hover {
+    background-color: #f7f7f7;
+    text-decoration: none;
+}
+
+.apple-btn {
+    background-image: url(/imgs/apple.png);
+}
+
+.google-btn {
+    background-image: url(/imgs/play-store.png);
+}
+
+/* end footer */
+
+/* start collection section */
+.collection {
+    width: 100%;
+    margin-top: 80px;
+}
+
+.collect {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 100px;
+}
+
+.collect i {
+    color: #555;
+    font-size: 25px;
+    position: relative;
+    top: 80px;
+    opacity: .5;
+}
+
+.collect1,
+.collect3 {
+    width: 25%;
+}
+
+.collect2 {
+    width: 50%;
+    text-align: center;
+}
+
+.collect2 .text {
+    width: 50%;
+    position: relative;
+    bottom: 10%;
+    margin: auto;
+}
+
+.collect2 p {
+    color: #777;
+    text-align: center;
+    font-weight: 800;
+    font-size: 18px;
+    opacity: .6;
+}
+
+.collect2 h2 {
+    font-size: 40px;
+    color: #555;
+    text-align: center;
+}
+
+.collection .collect2 .icon i {
+    position: relative;
+    top: 30px;
+    color: #555;
+    font-size: 60px;
+}
+
+.slider {
+    width: 100%;
+    height: 70vh;
+    margin-top: 50px;
+    padding: 0 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.slider .slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.slider .img {
+    width: 330px;
+    height: 450px;
+    background-color: #eee;
+    border-radius: 30px;
+}
+
+.slider .text {
+    width: 300px;
+    height: 350px;
+    padding: 0 30px;
+}
+
+.slider .text h3 {
+    color: blueviolet;
+    font-size: 22px;
+}
+
+.slider .text p {
+    color: #777;
+    opacity: .5;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+/* end collection section */
+
+/* start our story */
+.story {
+    width: 100%;
+    height: 70vh;
+    padding: 0 150px;
+    margin-top: 80px;
+}
+
+.story .container {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+}
+
+.story .container .text {
+    width: 70%;
+    margin-top: 100px;
+}
+
+.story .container .text h2 {
+    font-size: 35px;
+    color: #555;
+}
+
+.story .container .text p {
+    color: #777;
+    opacity: .6;
+    font-weight: 800;
+    font-size: 15px;
+}
+
+.story .container .img {
+    width: 450px;
+    height: 280px;
+    background: url(/imgs/story_img.png) no-repeat;
+    background-size: 100% 100%;
+    border-radius: 30px;
+    position: relative;
+    bottom: 90px;
+    right: 80px;
+}
+
+/* end our story */
+
+/* start contact us */
+.contact {
+    width: 100%;
+    height: 90vh;
+    background-color: #eee;
+    padding: 0 150px;
+    margin-top: 80px;
+}
+
+.contact .text {
+    width: 50%;
+    margin-top: 70px;
+}
+
+.contact .text h2 {
+    font-size: 30px;
+    color: #555;
+}
+
+.contact .text p {
+    color: #777;
+    opacity: .6;
+    font-weight: 800;
+    font-size: 15px;
+}
+
+.contact .form {
+    width: 80%;
+    margin: auto;
+}
+
+.contact .form .container {
+    padding: 15px;
+}
+
+.contact .form .container form {
+    margin-top: 30px;
+}
+
+.contact .form .container form .name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact .form .container form .name .first {
+    width: 45%;
+    display: block;
+}
+
+.contact .form .container form .name .last {
+    width: 45%;
+    display: block;
+}
+
+.contact .form .container form .email,
+.contact .form .container form .number,
+.contact .form .container form .submit,
+.contact .form .container form .msg {
+    width: 100%;
+    display: block;
+}
+
+.contact .form .container form .email input,
+.contact .form .container form .number input,
+.contact .form .container form .msg textarea {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    border: 2px solid #ddd;
+    outline: none;
+    padding: 0 15px;
+    color: #777;
+}
+
+.contact .form .container form .msg textarea {
+    height: 200px;
+    padding: 15px;
+}
+
+.contact .form .container form .submit {
+    margin-top: 30px;
+}
+
+.contact .form .container form .submit input {
+    width: 45%;
+    border-radius: 30px;
+    height: 40px;
+    font-weight: 800;
+    border: none;
+    outline: none;
+    background-color: blueviolet;
+    color: white;
+}
+
+/* end contact us */
+
+/* Responsive Design */
+@media only screen and (max-width: 1200px) {
+    header .text {
+        margin-left: 50px;
+    }
+    header .img {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .zigzag {
+        padding: 50px 50px;
+    }
+    .second {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+    .second .item1,
+    .second .item2,
+    .second .item3 {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .other {
+        right: 0;
+        width: 90%;
+        padding: 50px;
+        bottom: 0;
+    }
+    .foot .ship {
+        width: 100%;
+    }
+    .foot .social {
+        margin-left: 20px;
+        margin-top: 50px;
+    }
+    .foot .ship {
+        right: 0;
+    }
+    .contact {
+        padding: 0 50px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar .nav-item ul {
+      display: none;
+    }
+    .navbar .btn {
+        margin-right: 0;
+    }
+    header .container {
+        padding-left: 20px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+  
+    header .img {
+       display: none;
+    }
+    .foot {
+        flex-direction: column;
+        align-items: center;
+    }
+    .foot .social {
+        margin-top: 30px;
+    }
+    .story {
+        padding: 0 20px;
+    }
+    .story .container .text {
+        width: 100%;
+    }
+    .contact .text {
+        width: 100%;
+    }
+    .contact .form {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .navbar.nav-item ul {
+        display: none;
+    }
+    .navbar .btn {
+        display: none;
+    }
+    header .container {
+        padding-left: 10px;
+    }
+    .collect {
+        padding: 5px 10px;
+        flex-direction: column;
+    }
+    .collect1,
+    .collect2,
+    .collect3 {
+        width: 100%;
+    }
+    .collect2 .text {
+        width: 100%;
+        position: static;
+    }
+    .slider {
+        padding: 0 10px;
+    }
+    .story {
+        padding: 0 10px;
+    }
+    .contact {
+        padding: 0 10px;
+    }
+}
+
+  
